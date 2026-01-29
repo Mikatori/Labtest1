@@ -1,7 +1,7 @@
 import { createHashRouter } from 'react-router-dom';
 import AppShell from './components/layout/AppShell';
 import Dashboard from './features/dashboard/Dashboard';
-import WaterQualityLab from './features/labs/Lab1Water/WaterQualityLab';
+import EnhancedWaterQualityLab from './features/labs/Lab1Water/EnhancedWaterQualityLab';
 import AirQualityLab from './features/labs/Lab2Air/AirQualityLab';
 
 export const router = createHashRouter([
@@ -15,7 +15,7 @@ export const router = createHashRouter([
             },
             {
                 path: 'lab/water-quality',
-                element: <WaterQualityLab />
+                element: <EnhancedWaterQualityLab />
             },
             {
                 path: 'lab/air-quality',
