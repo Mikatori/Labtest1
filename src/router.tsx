@@ -1,10 +1,10 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import AppShell from './components/layout/AppShell';
 import Dashboard from './features/dashboard/Dashboard';
 import WaterQualityLab from './features/labs/Lab1Water/WaterQualityLab';
 import AirQualityLab from './features/labs/Lab2Air/AirQualityLab';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: '/',
         element: <AppShell />,
@@ -31,3 +31,4 @@ export const router = createBrowserRouter([
         ],
     },
 ]);
+
